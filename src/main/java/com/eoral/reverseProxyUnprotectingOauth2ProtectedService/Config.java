@@ -6,7 +6,7 @@ import java.util.function.Predicate;
 
 public class Config {
 
-public static final String CLIENT_CREDENTIALS_FLOW_TOKEN_URL = "https://my-authentication-provider.com/oauth2/token";
+    public static final String CLIENT_CREDENTIALS_FLOW_TOKEN_URL = "https://my-authentication-provider.com/oauth2/token";
     public static final String CLIENT_CREDENTIALS_FLOW_SCOPE = "my-scope";
     public static final String CLIENT_CREDENTIALS_FLOW_GRANT_TYPE = "client_credentials";
     public static final String CLIENT_CREDENTIALS_FLOW_USERNAME = "my-client-id";
