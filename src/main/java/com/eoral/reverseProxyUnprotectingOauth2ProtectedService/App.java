@@ -22,7 +22,6 @@ import static com.eoral.reverseProxyUnprotectingOauth2ProtectedService.Config.*;
  * - https://github.com/tomkraljevic/jetty-embed-reverse-proxy-example/blob/master/src/main/java/org/eclipse/jetty/embedded/ProxyServer.java
  * - https://dzone.com/articles/configuring-jetty-servlet-proxy
  */
- 
  public class App {
 
     public static void main(final String[] args) throws Exception {
@@ -60,7 +59,7 @@ import static com.eoral.reverseProxyUnprotectingOauth2ProtectedService.Config.*;
                 System.out.println("underlying request will be sent to: " + newURI);
                 return URI.create(newURI);
             }
-           }), "/*");
+        }), "/*");
         server.start();
         server.join();
     }
