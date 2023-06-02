@@ -60,7 +60,7 @@ public class TokenProvider {
                     CLIENT_CREDENTIALS_FLOW_TOKEN_URL,
                     CLIENT_CREDENTIALS_FLOW_SCOPE,
                     CLIENT_CREDENTIALS_FLOW_GRANT_TYPE);
-                    HttpPost httpPost = new HttpPost(uri);
+            HttpPost httpPost = new HttpPost(uri);
             httpPost.addHeader("Content-Type", "application/x-www-form-urlencoded");
             httpPost.addHeader("Authorization", generateBasicAuthorizationHeader(CLIENT_CREDENTIALS_FLOW_USERNAME, CLIENT_CREDENTIALS_FLOW_PASSWORD));
             CloseableHttpResponse httpResponse = client.execute(httpPost);
