@@ -22,12 +22,12 @@ import static com.eoral.reverseProxyUnprotectingOauth2ProtectedService.Config.*;
  * - https://github.com/tomkraljevic/jetty-embed-reverse-proxy-example/blob/master/src/main/java/org/eclipse/jetty/embedded/ProxyServer.java
  * - https://dzone.com/articles/configuring-jetty-servlet-proxy
  */
- public class App {
+public class App {
 
     public static void main(final String[] args) throws Exception {
         runProxyUsingJetty();
     }
-    
+
     private static void runProxyUsingJetty() throws Exception {
         Server server = new Server(PROXY_PORT);
         ServletContextHandler contextHandler = new ServletContextHandler(ServletContextHandler.NO_SESSIONS);
